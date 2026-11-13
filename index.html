@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>José Inácio × Pedro Fontes · Vídeo e fotografia</title>
+<meta name="description" content="Vídeo e fotografia de casamentos e eventos no norte de Portugal. José Inácio (vídeo) e Pedro Fontes (fotografia). Peçam disponibilidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Barlow+Condensed:wght@300;500;600&family=Courier+Prime:wght@400;700&display=swap">
+<style>
+/* Concept: the wedding as a film. Poster-like opening over a cinemascope reel, the work as reels and a contact sheet, the request as a production sheet, closing credits. Mobile first. */
+:root{--ink:#100e0d;--ink-2:#1b1816;--paper:#f3eee6;--paper-2:#e9e2d7;--sheet:#f8f5f0;--txt:#1a1614;--muted:#7a706a;--muted-ink:#a39a90;--rose:#e6a48f;--wine:#8c2f39;--rule:#d6cdc2;
+--mono:"Courier Prime","Courier New",monospace;--cond:"Barlow Condensed","Arial Narrow",sans-serif;--sans:"Archivo",system-ui,sans-serif;color-scheme:light}
+[hidden]{display:none!important}*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--paper);color:var(--txt);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-text-size-adjust:100%}
+img,video{max-width:100%}
+.g{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.w{max-width:1040px;margin:0 auto}
+.ink{background:var(--ink);color:#efe9e1}
+.grain{position:relative}
+.grain::after{content:"";position:absolute;inset:0;background:url(img/grain.png);mix-blend-mode:overlay;opacity:.14;pointer-events:none}
+.bar{display:flex;justify-content:space-between;gap:10px;font-family:var(--cond);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-ink);padding-block:16px}
+#tc{color:var(--rose);font-variant-numeric:tabular-nums;letter-spacing:.08em}
+.frame{position:relative;aspect-ratio:2.39/1;background:#000;overflow:hidden}
+.frame video{width:100%;height:100%;object-fit:cover;display:block}
+.sub{position:absolute;left:0;right:0;bottom:6%;text-align:center;font-weight:500;font-size:clamp(14px,2.4vw,22px);color:#fff;text-shadow:0 0 3px #000,0 0 2px #000;padding:0 12px;z-index:2}
+.poster{text-align:center;padding-block:26px 40px}
+.pre{font-family:var(--cond);font-weight:500;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--rose)}
+h1{font-family:var(--cond);font-weight:500;font-size:clamp(42px,11vw,86px);line-height:.96;letter-spacing:.03em;text-transform:uppercase;margin:12px auto 14px;max-width:16ch;text-wrap:balance}
+.billing{font-family:var(--cond);font-weight:300;font-size:13px;letter-spacing:.14em;line-height:1.5;text-transform:uppercase;color:#cfc6bb;max-width:520px;margin:0 auto}
+.billing b{font-weight:600;color:#fff}
+.btn{display:inline-block;margin-top:22px;font-family:var(--cond);font-weight:500;font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background:#efe9e1;padding:14px 22px;text-decoration:none}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+section.b{padding-block:54px}
+.h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;border-bottom:1px solid currentColor;padding-bottom:10px;margin-bottom:22px}
+.h h2{font-family:var(--cond);font-weight:500;font-size:clamp(30px,6vw,46px);letter-spacing:.03em;text-transform:uppercase;line-height:1;margin:0}
+.h span{font-family:var(--cond);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ink .h span{color:var(--muted-ink)}
+/* reels: horizontal swipe on mobile */
+.reels{display:grid;grid-auto-flow:column;grid-auto-columns:62%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.reels>div{scroll-snap-align:start;min-width:0}
+@media (min-width:760px){.reels{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible}}
+.reels video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;display:block}
+.cap{font-family:var(--cond);font-weight:500;font-size:12px;letter-spacing:.18em;color:var(--muted-ink);margin-top:6px;text-transform:uppercase}
+.swipe{font-family:var(--mono);font-size:12px;color:var(--muted-ink);margin-top:6px}
+@media (min-width:760px){.swipe{display:none}}
+.sheet{background:#0b0a09;padding:10px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px 8px}
+@media (min-width:760px){.sheet{grid-template-columns:repeat(4,1fr);padding:14px}}
+.sheet figure{margin:0;min-width:0}
+.sheet img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.sheet figcaption{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--rose);margin-top:4px}
+.steps{display:grid;gap:22px}
+@media (min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps div{border-top:1px solid var(--rule);padding-top:12px;min-width:0}
+.steps .n{font-family:var(--mono);font-size:13px;color:var(--wine)}
+.steps b{display:block;font-family:var(--cond);font-weight:500;font-size:24px;letter-spacing:.03em;text-transform:uppercase;line-height:1.05;margin:4px 0 6px}
+.steps p{margin:0;color:var(--muted);font-size:15px}
+.quote{font-family:var(--mono);font-size:16px;line-height:1.55;background:var(--sheet);border:1px solid var(--rule);padding:22px 20px;margin-top:30px}
+.quote .chr{text-transform:uppercase;margin-left:30%}
+.quote .par{color:var(--muted);margin-left:24%}
+.quote .dia{margin:0 6% 0 14%}
+.crew{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.crew a{display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center;text-decoration:none;color:inherit;border-top:1px solid var(--txt);padding-top:10px;min-width:0}
+.crew img{width:52px;height:52px;object-fit:cover}
+.crew .r{font-family:var(--cond);font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--wine);display:block}
+.crew b{font-family:var(--cond);font-weight:500;font-size:21px;letter-spacing:.03em;text-transform:uppercase;display:block;line-height:1}
+.crew small{font-size:11px;color:var(--muted);overflow-wrap:anywhere}
+@media (max-width:400px){.crew small{display:none}}
+form,.done{max-width:620px}
+.fs{border:1px solid var(--txt);background:var(--sheet)}
+.fs-h{display:flex;justify-content:space-between;background:var(--txt);color:var(--paper);font-family:var(--cond);font-weight:500;font-size:13px;letter-spacing:.2em;padding:9px 12px;text-transform:uppercase}
+.row{display:grid;grid-template-columns:86px 1fr;border-top:1px solid var(--rule);min-height:52px}
+.row:first-of-type{border-top:0}
+.row label,.row .lab{font-family:var(--cond);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:15px 10px;border-right:1px solid var(--rule)}
+.row input,.row select,.row textarea{font:inherit;font-size:16px;color:var(--txt);background:transparent;border:0;padding:13px 12px;width:100%;min-width:0;border-radius:0;-webkit-appearance:none;appearance:none}
+.row select{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a706a' fill='none' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 12px center}
+.row textarea{min-height:90px;resize:vertical}
+.row :focus-visible{outline:2px solid var(--wine);outline-offset:-2px}
+.team{padding:4px 8px}
+.opt{position:relative;display:block}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer;width:100%;height:100%}
+.opt span{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 2px;font-family:var(--cond);font-weight:500;font-size:19px;letter-spacing:.04em;text-transform:uppercase;border-bottom:1px dashed var(--rule)}
+.opt:last-child span{border-bottom:0}
+.opt span::after{content:"";width:18px;height:18px;border:1.5px solid var(--muted);flex:none}
+.opt input:checked+span::after{background:var(--wine);border-color:var(--wine);box-shadow:inset 0 0 0 3px var(--sheet)}
+.opt input:focus-visible+span{outline:2px solid var(--wine)}
+.err{font-family:var(--mono);font-size:13px;color:var(--wine);margin:12px 0 0}
+.go{display:block;width:100%;margin-top:14px;font-family:var(--cond);font-weight:500;font-size:18px;letter-spacing:.16em;text-transform:uppercase;background:var(--txt);color:var(--paper);border:0;padding:17px;cursor:pointer}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.done{border:1px solid var(--txt);padding:20px;display:grid;gap:12px;background:var(--sheet)}
+.done h2{font-family:var(--cond);font-weight:500;font-size:34px;letter-spacing:.03em;text-transform:uppercase;margin:0;line-height:1}
+.done a{color:var(--wine);font-weight:500}
+pre{white-space:pre-wrap;word-break:break-word;font-family:var(--mono);font-size:13px;background:var(--paper-2);padding:12px;margin:0}
+.ghost{font-family:var(--cond);font-weight:500;font-size:15px;letter-spacing:.14em;text-transform:uppercase;background:transparent;border:1px solid var(--txt);padding:12px;cursor:pointer;color:var(--txt)}
+footer{position:relative;overflow:hidden;text-align:center;padding-block:56px}
+footer img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(2px) brightness(.3)}
+footer .c{position:relative;z-index:2}
+.cr{font-family:var(--cond);font-weight:500;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose)}
+.cn{font-family:var(--cond);font-weight:500;font-size:28px;letter-spacing:.08em;text-transform:uppercase;color:#fff;margin:2px 0 18px}
+footer a{color:#efe9e1}
+@media (prefers-reduced-motion:reduce){.frame video{display:none}}
+</style>
+</head>
+<body>
+<header class="ink g">
+ <div class="w">
+  <div class="bar"><span>José Inácio × Pedro Fontes</span><span id="tc">00:00:00:00</span></div>
+  <div class="frame grain"><video src="media/hero.mp4" autoplay muted loop playsinline preload="metadata"></video><div class="sub" id="sub">Contem-nos o vosso dia.</div></div>
+  <div class="poster">
+   <div class="pre">Vídeo · Fotografia · Norte de Portugal</div>
+   <h1>O vosso dia merece ser visto outra vez.</h1>
+   <div class="billing"><b>José Inácio</b> × <b>Pedro Fontes</b> apresentam · um filme de José Inácio · fotografia de Pedro Fontes · protagonistas: vocês</div>
+   <a class="btn" href="#pedido">Pedir disponibilidade ↓</a>
+  </div>
+ </div>
+</header>
+
+<section class="b ink g">
+ <div class="w">
+  <div class="h"><h2>Em movimento</h2><span>Vídeo · José Inácio</span></div>
+  <div class="reels">
+   <div><video src="media/rita_fast_dia.mp4" poster="media/rita_fast_dia.jpg" muted loop playsinline controls preload="none"></video><div class="cap">Um dia inteiro</div></div>
+   <div><video src="media/reacoes.mp4" poster="media/reacoes.jpg" muted loop playsinline controls preload="none"></video><div class="cap">Os que vos amam</div></div>
+   <div><video src="media/danca.mp4" poster="media/danca.jpg" muted loop playsinline controls preload="none"></video><div class="cap">Primeira dança</div></div>
+   <div><video src="media/diana_det.mp4" poster="media/diana_det.jpg" muted loop playsinline controls preload="none"></video><div class="cap">Pormenores</div></div>
+  </div>
+  <div class="swipe">deslizem para o lado →</div>
+
+  <div class="h" style="margin-top:50px"><h2>Em fotografia</h2><span>Fotografia · Pedro Fontes</span></div>
+  <div class="sheet" id="sheet"></div>
+ </div>
+</section>
+
+<section class="b g">
+ <div class="w">
+  <div class="h"><h2>Como trabalhamos</h2><span>Do primeiro olá ao filme</span></div>
+  <div class="steps">
+   <div><b>Uma conversa</b><p>Sem compromisso. Contam-nos como imaginam o dia e o que é importante para vocês.</p></div>
+   <div><b>Pré-wedding</b><p>Oferecida a quem contrata o vídeo. Conhecemo-nos e a câmara deixa de ser estranha.</p></div>
+   <div><b>O grande dia</b><p>Vídeo e fotografia coordenados, discretos e atentos. Vocês vivem, nós guardamos.</p></div>
+   <div><b>Filme e álbum</b><p>Primeiro um teaser, depois o filme e as fotografias, com a mesma linguagem.</p></div>
+  </div>
+  <div class="quote">
+   <div class="chr">José</div><div class="par">(para os noivos)</div>
+   <div class="dia">Bons filmes há muitos. O que procuro é que, daqui a vinte anos, voltem a sentir tudo o que viveram nesse dia.</div>
+  </div>
+ </div>
+</section>
+
+<section class="b g" id="pedido" style="padding-top:0">
+ <div class="w">
+  <div class="h"><h2>Pedir disponibilidade</h2><span>Resposta no WhatsApp</span></div>
+  <section class="crew" aria-label="Equipa">
+   <a href="https://www.instagram.com/joseinacio.filmmaker/" target="_blank" rel="noopener"><img src="img/jose.jpg" alt="José Inácio"><span><span class="r">Vídeo</span><b>José Inácio</b><small>@joseinacio.filmmaker</small></span></a>
+   <a href="https://www.instagram.com/pedro.fontes.fotografia/" target="_blank" rel="noopener"><img src="img/pedro.jpg" alt="Pedro Fontes"><span><span class="r">Fotografia</span><b>Pedro Fontes</b><small>@pedro.fontes.fotografia</small></span></a>
+  </section>
+  <form id="f" novalidate>
+   <div class="fs">
+    <div class="fs-h"><span>Folha de serviço</span><span>Nº 01</span></div>
+    <div class="row"><label for="nomes">Nome</label><input id="nomes" autocomplete="name" placeholder="Ana Silva" required></div>
+    <div class="row"><label for="tipo">Evento</label>
+     <select id="tipo" required><option value="">Escolher</option><option>Casamento</option><option>Pré-wedding</option><option>Trash the dress</option><option>Batizado</option><option>Aniversário</option><option>Sessão de casal</option><option>Evento de empresa</option><option>Outro</option></select></div>
+    <div class="row"><label for="data">Data</label><input id="data" type="date" required></div>
+    <div class="row"><label for="local">Local</label><input id="local" placeholder="Quinta, igreja, cidade" required></div>
+    <div class="row"><div class="lab">Equipa</div>
+     <div class="team" id="servicos">
+      <label class="opt"><input type="radio" name="servico" id="s-ambos" value="Vídeo e fotografia" checked><span>Vídeo + fotografia</span></label>
+      <label class="opt"><input type="radio" name="servico" id="s-video" value="Só vídeo"><span>Só vídeo</span></label>
+      <label class="opt"><input type="radio" name="servico" id="s-foto" value="Só fotografia"><span>Só fotografia</span></label>
+     </div></div>
+    <div class="row"><label for="nota">Notas</label><textarea id="nota" placeholder="Convidados, horário, ideias (opcional)"></textarea></div>
+   </div>
+   <p class="err" id="err" hidden>Faltam o nome, o tipo de evento, a data ou o local.</p>
+   <button class="go" type="submit">Enviar pelo WhatsApp →</button>
+   <p class="note">Abre o WhatsApp com a mensagem já escrita. Só têm de a enviar.</p>
+  </form>
+  <section class="done" id="done" hidden aria-live="polite">
+   <h2>Quase pronto.</h2>
+   <p>Abram o WhatsApp e enviem a mensagem. Respondemos normalmente no próprio dia.</p>
+   <a id="wa" href="#" target="_blank" rel="noopener">Abrir WhatsApp com a mensagem →</a>
+   <p class="note">Se o WhatsApp não abrir, copiem a mensagem e enviem para <strong id="numtxt"></strong>:</p>
+   <pre id="preview"></pre>
+   <button type="button" class="ghost" id="copy">Copiar mensagem</button>
+   <button type="button" class="ghost" id="back">Voltar</button>
+  </section>
+ </div>
+</section>
+
+<footer class="ink g">
+ <img class="bg" src="img/galeria/g11.jpg" alt="">
+ <div class="c">
+  <div class="cr">Um filme de</div><div class="cn">José Inácio</div>
+  <div class="cr">Fotografia</div><div class="cn">Pedro Fontes</div>
+  <div class="cr">Protagonistas</div><div class="cn">Vocês</div>
+  <div class="cr" style="margin-top:8px"><a href="parcerias.html">Parcerias para quintas e planners</a></div>
+ </div>
+</footer>
+
+<script>
+const WHATSAPP="351938533222";
+const $=id=>document.getElementById(id);
+(function(){const el=$('tc');const t0=performance.now();const p=n=>String(n).padStart(2,'0');
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ setInterval(()=>{const s=(performance.now()-t0)/1000;el.textContent=`00:${p(Math.floor(s/60)%60)}:${p(Math.floor(s)%60)}:${p(Math.floor((s%1)*24))}`},42)})();
+(function(){const L=["Contem-nos o vosso dia.","Vídeo e fotografia, uma só equipa.","Do primeiro nervosismo à última dança."];let i=0;setInterval(()=>{i=(i+1)%L.length;$('sub').textContent=L[i]},3200)})();
+(function(){const s=$('sheet');[1,3,5,8,6,11,2,12].forEach((k,i)=>{const n=String(k).padStart(2,'0');const f=document.createElement('figure');
+ f.innerHTML=`<img src="img/galeria/g${n}.jpg" alt="Fotografia de casamento por Pedro Fontes" decoding="async"><figcaption><span>▸ ${String(i+1).padStart(2,'0')}A</span><span>${String(i+1).padStart(2,'0')}</span></figcaption>`;s.appendChild(f)})})();
+document.querySelectorAll('.reels video').forEach(v=>{v.addEventListener('play',()=>document.querySelectorAll('.reels video').forEach(o=>{if(o!==v)o.pause()}))});
+function fmtDate(v){const [y,m,d]=v.split("-");return `${d}/${m}/${y}`}
+function buildMessage(){const serv=document.querySelector('#servicos input:checked').value;
+ const L=["Olá José e Pedro! Gostaria de saber a vossa disponibilidade.","",`Nome: ${$('nomes').value.trim()}`,`Evento: ${$('tipo').value}`,`Data: ${fmtDate($('data').value)}`,`Local: ${$('local').value.trim()}`,`Serviço: ${serv}`];
+ const n=$('nota').value.trim();if(n)L.push("",`Notas: ${n}`);return L.join("\n")}
+$('f').addEventListener('submit',e=>{e.preventDefault();const miss=['nomes','tipo','data','local'].find(id=>!$(id).value.trim());
+ if(miss){$('err').hidden=false;$(miss).focus();return}
+ $('err').hidden=true;const t=buildMessage();$('preview').textContent=t;$('numtxt').textContent="+"+WHATSAPP;
+ $('wa').href=`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;$('f').hidden=true;$('done').hidden=false;$('wa').focus()});
+$('copy').addEventListener('click',()=>{const t=$('preview').textContent;const fb=()=>{const r=document.createRange();r.selectNodeContents($('preview'));const s=getSelection();s.removeAllRanges();s.addRange(r)};
+ try{navigator.clipboard.writeText(t).then(()=>{$('copy').textContent="Mensagem copiada"},fb)}catch{fb()}});
+$('back').addEventListener('click',()=>{$('done').hidden=true;$('f').hidden=false;$('copy').textContent="Copiar mensagem"});
+</script>
+</body>
+</html>

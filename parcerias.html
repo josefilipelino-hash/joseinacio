@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Parcerias · José Inácio × Pedro Fontes</title>
+<meta name="description" content="Parceria para quintas e wedding planners: vídeo (José Inácio) e fotografia (Pedro Fontes) numa só equipa, no norte de Portugal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Barlow+Condensed:wght@300;500;600&family=Courier+Prime:wght@400;700&display=swap">
+<style>
+/* Concept: a film pitch. Letterboxed opening, the offer written as script pages, the work shown as reels and a contact sheet, closing credits. */
+:root{--ink:#100e0d;--paper:#f3eee6;--paper-2:#e7e3da;--txt:#161615;--muted:#6d6a63;--muted-ink:#8f8b83;--teal:#8c2f39;--teal-ink:#e6a48f;--edge:#e6a48f;--rule:#cfcac0;
+--mono:"Courier Prime","Courier New",monospace;--cond:"Barlow Condensed","Arial Narrow",sans-serif;--sans:"Archivo",system-ui,sans-serif;color-scheme:light}
+[hidden]{display:none!important}*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--paper);color:var(--txt);font-family:var(--sans);font-size:16px;line-height:1.55}
+.g{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.w{max-width:1080px;margin:0 auto}
+.ink{background:var(--ink);color:#ebe7df}
+.bar{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:12.5px;color:var(--muted-ink);padding-block:18px}
+.bar #tc{color:var(--teal-ink);font-variant-numeric:tabular-nums}
+.frame{position:relative;aspect-ratio:2.39/1;background:#000;overflow:hidden}
+.frame video{width:100%;height:100%;object-fit:cover;display:block}
+.sub{position:absolute;left:0;right:0;bottom:4%;text-align:center;font-weight:500;font-size:clamp(14px,2.2vw,22px);color:#fff;text-shadow:0 0 3px #000,0 0 2px #000;padding:0 14px}
+.open{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;padding-block:30px 52px;align-items:end}
+@media (max-width:760px){.open{grid-template-columns:1fr;gap:16px}}
+.slug{font-family:var(--mono);font-size:13px;color:var(--muted-ink);text-transform:uppercase}
+h1{font-family:var(--cond);font-weight:600;font-size:clamp(46px,8vw,92px);line-height:.9;text-transform:uppercase;margin:10px 0 0;letter-spacing:-.005em}
+.open p{color:#bdb8ae;margin:0}
+.cta{display:inline-block;margin-top:18px;font-family:var(--mono);text-transform:uppercase;font-size:15px;color:var(--ink);background:#ebe7df;padding:14px 18px;text-decoration:none;letter-spacing:.03em}
+.cta:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--teal-ink);outline-offset:2px}
+section.b{padding-block:60px}
+.h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:2px solid currentColor;padding-bottom:10px;margin-bottom:26px;flex-wrap:wrap}
+.h h2{font-family:var(--cond);font-weight:600;font-size:clamp(32px,5vw,52px);text-transform:uppercase;line-height:.95;margin:0}
+.h span{font-family:var(--mono);font-size:13px;text-transform:uppercase;color:var(--muted)}
+.ink .h span{color:var(--muted-ink)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:760px){.why{grid-template-columns:1fr}}
+.why div{min-width:0}.why .n{font-family:var(--mono);font-size:13px;color:var(--teal)}
+.why b{display:block;font-family:var(--cond);font-weight:600;font-size:28px;text-transform:uppercase;line-height:1;margin:6px 0 8px}
+.why p{margin:0;color:var(--muted)}
+.pages{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:760px){.pages{grid-template-columns:1fr}}
+.page{background:#f8f6f1;border:1px solid var(--rule);box-shadow:0 1px 0 var(--rule),0 2px 0 #fff,0 3px 0 var(--rule);padding:30px 28px 34px;font-family:var(--mono);font-size:15px;line-height:1.5;min-width:0}
+.page .sl{font-weight:700;text-transform:uppercase;margin-bottom:16px}
+.page .act{margin:0 0 14px}
+.page .chr{text-transform:uppercase;margin:18px 0 0 34%}
+.page .dia{margin:0 12% 0 18%}
+.page .pn{float:right;color:var(--muted)}
+@media (max-width:560px){.page{padding:22px 18px 26px;font-size:14px}.page .chr{margin-left:22%}.page .dia{margin:0 0 0 8%}.bar span:nth-child(2){display:none}}
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media (max-width:760px){.reels{grid-template-columns:repeat(2,1fr)}}
+.reels video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;display:block}
+.cap{font-family:var(--mono);font-size:12px;color:var(--muted-ink);margin-top:6px;text-transform:uppercase}
+.sheet{background:#0b0b0b;padding:14px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px 10px}
+@media (max-width:760px){.sheet{grid-template-columns:repeat(2,1fr);padding:10px}}
+.sheet figure{margin:0;min-width:0}
+.sheet img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.sheet figcaption{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--edge);margin-top:4px}
+.crew{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+@media (max-width:560px){.crew{grid-template-columns:1fr}}
+.crew a{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;text-decoration:none;color:inherit;border-top:1px solid #3a3935;padding-top:12px}
+.crew img{width:64px;height:64px;object-fit:cover;filter:grayscale(1)}
+.crew .r{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--muted-ink);display:block}
+.crew b{font-family:var(--cond);font-weight:500;font-size:26px;text-transform:uppercase;display:block;line-height:1}
+.crew small{color:var(--teal-ink)}
+form{border:2px solid var(--txt);background:#f8f6f1;max-width:640px}
+.fh{display:flex;justify-content:space-between;background:var(--txt);color:var(--paper);font-family:var(--mono);font-size:13px;padding:8px 12px;text-transform:uppercase}
+.row{display:grid;grid-template-columns:130px 1fr;border-top:1px solid var(--rule)}
+.row:first-of-type{border-top:0}
+.row label{font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--muted);padding:12px 10px;border-right:1px solid var(--rule)}
+.row input,.row select,.row textarea{font:inherit;background:transparent;border:0;padding:12px;width:100%;min-width:0;color:var(--txt);border-radius:0}
+.row textarea{min-height:80px;resize:vertical}
+.row :focus-visible{outline:2px solid var(--teal);outline-offset:-2px}
+form button{display:block;width:100%;font-family:var(--mono);font-size:15px;text-transform:uppercase;background:var(--txt);color:var(--paper);border:0;padding:15px;cursor:pointer}
+.err{font-family:var(--mono);font-size:13px;color:#a3362a;padding:10px 12px;margin:0}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+footer{padding-block:48px;text-align:center;color:var(--muted-ink)}
+.crd{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.cn{font-family:var(--cond);font-weight:500;font-size:26px;letter-spacing:.06em;text-transform:uppercase;color:#ebe7df;margin:2px 0 16px}
+footer a{color:var(--teal-ink)}
+.grain{position:relative}.grain::after{content:"";position:absolute;inset:0;background:url(img/grain.png);mix-blend-mode:overlay;opacity:.14;pointer-events:none}
+.why .n{display:none}
+</style>
+</head>
+<body>
+<header class="ink g">
+ <div class="w">
+  <div class="bar"><span>JOSÉ INÁCIO × PEDRO FONTES</span><span>PARCERIAS</span><span id="tc">00:00:00:00</span></div>
+  <div class="frame grain"><video src="media/hero.mp4" autoplay muted loop playsinline preload="metadata"></video><div class="sub" id="sub">Um filme. Um álbum. Uma equipa.</div></div>
+  <div class="open">
+   <div><div class="slug">Para quintas e wedding planners</div><h1>Um filme. Um álbum. Uma equipa.</h1></div>
+   <div><p>Somos o José Inácio (vídeo) e o Pedro Fontes (fotografia). Trabalhamos juntos em casamentos no norte de Portugal: combinamos tudo antes e, no dia, não nos atrapalhamos. Os noivos recebem um filme e um álbum com a mesma linguagem, e vocês ganham um parceiro em quem podem confiar.</p>
+   <a class="cta" href="#conversa">Marcar 15 minutos →</a></div>
+  </div>
+ </div>
+</header>
+
+<section class="b g">
+ <div class="w">
+  <div class="h"><h2>Porquê uma só equipa</h2><span>Vídeo × Fotografia</span></div>
+  <div class="why">
+   <div><b>Um contacto</b><p>Uma conversa, um planeamento, um horário partilhado. Menos mensagens para os noivos e para vocês.</p></div>
+   <div><b>Ninguém no plano do outro</b><p>Combinamos posições antes de cada momento. Nenhuma entrada, beijo ou discurso se perde.</p></div>
+   <div><b>Um estilo coerente</b><p>Filme e fotografias com a mesma luz e a mesma linguagem, do pré-wedding à última dança.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="b g" style="padding-top:0">
+ <div class="w">
+  <div class="h"><h2>O que propomos</h2><span>Proposta de parceria</span></div>
+  <div class="pages">
+   <article class="page"><span class="pn">1.</span>
+    <div class="sl">INT. QUINTA — DIA DE CASAMENTO</div>
+    <p class="act">Uma quinta cheia. Os noivos chegam. Do lado de lá, a equipa já sabe onde se colocar.</p>
+    <div class="chr">José e Pedro</div>
+    <p class="dia">Por cada casal que nos recomendarem e feche o vídeo, recebem uma comissão.</p>
+    <p class="dia">Nos casamentos que fizermos juntos, oferecemos um Reel do vosso espaço em contexto real, publicado em colaboração (com autorização dos noivos).</p>
+    <p class="dia">Os noivos que vierem por vocês podem fazer a sessão pré-wedding no vosso espaço.</p>
+   </article>
+   <article class="page"><span class="pn">2.</span>
+    <div class="sl">INT. ESCRITÓRIO DA WEDDING PLANNER — MANHÃ</div>
+    <p class="act">Um horário cheio de fornecedores. Um deles chega já coordenado.</p>
+    <div class="chr">José e Pedro</div>
+    <p class="dia">Por cada casal que nos recomendarem e feche o vídeo, recebem uma comissão.</p>
+    <p class="dia">Nos casamentos que fazemos juntos, oferecemos um vídeo de bastidores convosco a trabalhar.</p>
+    <p class="dia">Quem contrata o vídeo recebe a sessão pré-wedding. No grande dia, os noivos chegam à vontade e o vosso trabalho brilha mais.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="b ink g">
+ <div class="w">
+  <div class="h"><h2>Em movimento</h2><span>Vídeo · José Inácio</span></div>
+  <div class="reels">
+   <div><video src="media/rita_fast_dia.mp4" poster="media/rita_fast_dia.jpg" muted loop playsinline controls preload="metadata"></video><div class="cap">Um dia inteiro</div></div>
+   <div><video src="media/reacoes.mp4" poster="media/reacoes.jpg" muted loop playsinline controls preload="metadata"></video><div class="cap">Os que vos amam</div></div>
+   <div><video src="media/danca.mp4" poster="media/danca.jpg" muted loop playsinline controls preload="metadata"></video><div class="cap">Primeira dança</div></div>
+   <div><video src="media/diana_det.mp4" poster="media/diana_det.jpg" muted loop playsinline controls preload="metadata"></video><div class="cap">Pormenores</div></div>
+  </div>
+  <div class="h" style="margin-top:56px"><h2>Em fotografia</h2><span>Fotografia · Pedro Fontes</span></div>
+  <div class="sheet" id="sheet"></div>
+  <div class="crew">
+   <a href="https://www.instagram.com/joseinacio.filmmaker/" target="_blank" rel="noopener"><img src="img/jose.jpg" alt="José Inácio"><span><span class="r">Vídeo</span><b>José Inácio</b><small>@joseinacio.filmmaker</small></span></a>
+   <a href="https://www.instagram.com/pedro.fontes.fotografia/" target="_blank" rel="noopener"><img src="img/pedro.jpg" alt="Pedro Fontes"><span><span class="r">Fotografia</span><b>Pedro Fontes</b><small>@pedro.fontes.fotografia</small></span></a>
+  </div>
+ </div>
+</section>
+
+<section class="b g" id="conversa">
+ <div class="w">
+  <div class="h"><h2>Vamos tomar um café?</h2><span>15 minutos · sem compromisso</span></div>
+  <form id="f" novalidate>
+   <div class="fh"><span>Folha de contacto</span><span>Nº 02</span></div>
+   <div class="row"><label for="nome">Nome</label><input id="nome" autocomplete="name" required></div>
+   <div class="row"><label for="empresa">Empresa</label><input id="empresa" placeholder="Quinta ou empresa" required></div>
+   <div class="row"><label for="tipo">Somos</label><select id="tipo"><option>Quinta / espaço</option><option>Wedding planner</option><option>Outro fornecedor</option></select></div>
+   <div class="row"><label for="quando">Melhor altura</label><select id="quando"><option>Esta semana</option><option>Próxima semana</option><option>Manhãs</option><option>Fim de tarde</option></select></div>
+   <div class="row"><label for="nota">Nota</label><textarea id="nota" placeholder="O que gostariam de explorar? (opcional)"></textarea></div>
+   <p class="err" id="err" hidden>Indique o nome e a empresa para continuar.</p>
+   <button type="submit">Combinar pelo WhatsApp →</button>
+  </form>
+  <p class="note">Também pode ligar ou escrever para +351 938 533 222.</p>
+ </div>
+</section>
+
+<footer class="ink g">
+ <div class="crd">Um filme de</div><div class="cn">José Inácio</div>
+ <div class="crd">Fotografia</div><div class="cn">Pedro Fontes</div>
+ <div class="crd">Norte de Portugal · <a href="./">Pedir disponibilidade</a></div>
+</footer>
+<script>
+const $=id=>document.getElementById(id);
+(function(){const el=$('tc');const t0=performance.now();const p=n=>String(n).padStart(2,'0');
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ setInterval(()=>{const s=(performance.now()-t0)/1000;el.textContent=`00:${p(Math.floor(s/60)%60)}:${p(Math.floor(s)%60)}:${p(Math.floor((s%1)*24))}`},42)})();
+(function(){const L=["Um filme. Um álbum. Uma equipa.","Vídeo por José Inácio.","Fotografia por Pedro Fontes."];let i=0;setInterval(()=>{i=(i+1)%L.length;$('sub').textContent=L[i]},3200)})();
+(function(){const s=$('sheet');for(let i=1;i<=12;i++){const f=document.createElement('figure');const n=String(i).padStart(2,'0');
+ f.innerHTML=`<img src="img/galeria/g${n}.jpg" alt="Fotografia de casamento por Pedro Fontes" decoding="async"><figcaption><span>▸ ${n}A</span><span>${n}</span></figcaption>`;s.appendChild(f)}})();
+$('f').addEventListener('submit',e=>{e.preventDefault();
+ if(!$('nome').value.trim()||!$('empresa').value.trim()){$('err').hidden=false;return}
+ const t=["Olá José e Pedro! Vi a vossa proposta de parceria e gostava de conversar.","",`Nome: ${$('nome').value.trim()}`,`Empresa: ${$('empresa').value.trim()} (${$('tipo').value})`,`Melhor altura: ${$('quando').value}`];
+ if($('nota').value.trim())t.push("",$('nota').value.trim());
+ window.location.href="https://wa.me/351938533222?text="+encodeURIComponent(t.join("\n"));});
+</script>
+</body>
+</html>
